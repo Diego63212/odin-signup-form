@@ -27,12 +27,36 @@ a {
     color: white;
 }
 
+label {
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+input {
+    font-size: 100%;
+    font-family: inherit;
+    display: block;
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    height: 2rem;
+    width: 25rem;
+    outline: none;
+    padding: 6px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
 .container {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
-
 
 .sidebar-container {
     color: white;
@@ -41,7 +65,7 @@ a {
     justify-content: space-between;
     background: no-repeat center url("../images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    min-width: 500px;
+    min-width: 550px;
 }
 
 .sidebar-odin {
@@ -85,43 +109,19 @@ a {
 
 .form-row {
     display: flex;
-    gap: 32px;
+    gap: 6rem;
     margin-bottom: 16px;
-}
-
-label {
-    font-size: 1.5rem;
-    font-family: inherit;
-}
-
-input {
-    font-size: 100%;
-    font-family: inherit;
-    display: block;
-    border: 1px solid #E5E7EB;
-    border-radius: 2px;
-    height: 2rem;
-    width: 25rem;
-    outline: none;
-    padding: 6px;
-}
-
-input:focus {
-    border-color: blue;
-}
-
-input:invalid {
-    border-color: red;
 }
 
 .form-title {
     color: #353535;
     font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.1rem;
 }
 
 .main-form > div {
-    padding: 32px;
+    padding: 30px 40px;
 }
 
 .main-first {
@@ -141,9 +141,15 @@ input:invalid {
     border-radius: 8px;
     border-style: none;
     background-color: #596D48;
+    cursor: pointer;
 }
 
-a {
+.btn-submit:disabled {
+    background-color: #535552;
+    cursor: default;
+}
+
+.login-link {
     font-weight: bold;
     text-decoration: none;
     color: #596D48;
@@ -151,4 +157,11 @@ a {
 
 .account-text {
     margin-top: 2rem;
+}
+
+.password-match {
+    display: inline-block;
+    color: red;
+    font-size: 1.2rem;
+    height: 0;
 }

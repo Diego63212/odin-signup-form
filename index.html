@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign-up form</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <main class="container">
@@ -52,10 +53,11 @@
                             <input type="tel" id="user-phone" name="user-phone">
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row" id="password-inputs">
                         <div>
                             <label for="user-password">PASSWORD</label>
                             <input type="password" id="user-password" name="user-password" required>
+                            <span class="password-match"></span>
                         </div>
                         <div>
                             <label for="user-password-confirm">CONFIRM PASSWORD</label>
@@ -65,8 +67,8 @@
                 </form>
             </div>
             <div class="main-second">
-                <button class="btn-submit">Create Account</button>
-                <p class="account-text">Already have an account? <a href="#">Log in</a></p>
+                <button class="btn-submit" form="form" id="btn-form-submit">Create Account</button>
+                <p class="account-text">Already have an account? <a href="#" class="login-link">Log in</a></p>
             </div>
         </div>
     </main>
