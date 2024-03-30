@@ -1,4 +1,154 @@
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-size: 1.6rem;
+}
+
+@font-face {
+    font-family: "norse";
+    src: url("/fonts/Norse-Bold.otf") format("opentype");
+}
+
+p + p {
+    margin: 3rem 0;
+}
+
+p {
+    max-width: 620px;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.sidebar-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: no-repeat center url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    min-width: 500px;
+}
+
+.sidebar-odin {
+    margin-top: 40%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0007;
+}
+
+.sidebar-text {
+    font: bold 10rem "norse";
+}
+
+.sidebar-credit {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fffc;
+}
+
+.sidebar-credit * {
+    color: #fffc;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.quote {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.quote-italic {
+    font-style: italic;
+}
+
+.form-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+input {
+    font-size: 100%;
+    font-family: inherit;
+    display: block;
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    height: 2rem;
+    width: 25rem;
+    outline: none;
+    padding: 6px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.form-title {
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-form > div {
+    padding: 32px;
+}
+
+.main-first {
+    margin-top: 12rem;
+    border-bottom: 1px solid black;
+}
+
+.main-second {
+    background-color: #eee;
+    flex-grow: 1;
+}
+
+.btn-submit {
+    padding: 16px 48px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #596D48;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #596D48;
+}
+
+.account-text {
+    margin-top: 2rem;
 }

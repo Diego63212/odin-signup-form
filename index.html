@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Hello
+    <main class="container">
+        <aside class="sidebar-container">
+            <div class="sidebar-odin">
+                <img src="images/odin-lined.png" width="100px">
+                <span class="sidebar-text">ODIN</span>
+            </div>
+            <div>
+                <p class="sidebar-credit">
+                    Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
+        </aside>
+        <div class="main-form">
+            <div class="main-first">
+                <p class="quote">
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <span class="quote quote-italic">now</span> to get started
+                </p>
+                <p class="quote">
+                    You <span class="quote quote-italic">know</span> you want to.
+                </p>
+
+                <form action="#" method="get" id="form">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="form-row">
+                        <div>
+                            <label for="user-firstname">FIRST NAME</label>
+                            <input type="text" id="user-firstname" name="user-first-name">
+                        </div>
+                        <div>
+                            <label for="user-lastname">LAST NAME</label>
+                            <input type="text" id="user-lastname" name="user-last-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="user-email">EMAIL</label>
+                            <input type="email" id="user-email" name="user-email">
+                        </div>
+                        <div>
+                            <label for="user-phone">PHONE NUMBER</label>
+                            <input type="tel" id="user-phone" name="user-phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" id="user-password" name="user-password" required>
+                        </div>
+                        <div>
+                            <label for="user-password-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="user-password-confirm" name="user-password-confirm" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="main-second">
+                <button class="btn-submit">Create Account</button>
+                <p class="account-text">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
