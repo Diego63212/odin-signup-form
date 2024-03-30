@@ -46,6 +46,7 @@ input {
 
 input:focus {
     border-color: blue;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
 }
 
 input:invalid {
@@ -65,7 +66,7 @@ input:invalid {
     justify-content: space-between;
     background: no-repeat center url("../images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    min-width: 550px;
+    width: 550px;
 }
 
 .sidebar-odin {
