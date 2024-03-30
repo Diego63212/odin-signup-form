@@ -11,8 +11,8 @@ html {
 }
 
 @font-face {
-    font-family: "norse";
-    src: url("../fonts/Norse-Bold.otf") format("opentype");
+    font-family: "Norse-Bold";
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
 }
 
 p + p {
@@ -79,7 +79,7 @@ input:invalid {
 }
 
 .sidebar-text {
-    font: bold 10rem "norse";
+    font: bold 10rem "Norse-Bold";
 }
 
 .sidebar-credit {
