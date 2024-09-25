@@ -127,7 +127,8 @@ input:invalid {
 
 .main-first {
     margin-top: 12rem;
-    border-bottom: 1px solid black;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.20);
+    z-index: 1;
 }
 
 .main-second {
